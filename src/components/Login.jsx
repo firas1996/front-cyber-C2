@@ -1,7 +1,9 @@
-const Login = (props) => {
+const Login = ({ myName, getData }) => {
+  const abc = "Wolrd !";
+  getData(abc);
   return (
     <>
-      <h2>My name is {props.myName} </h2>
+      <h2>My name is {myName} </h2>
     </>
   );
 };
