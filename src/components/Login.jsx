@@ -1,9 +1,12 @@
-const Login = ({ myName, getData }) => {
-  const abc = "Wolrd !";
-  getData(abc);
+const Login = () => {
+  const loginHandler = () => {};
   return (
     <>
-      <h2>My name is {myName} </h2>
+      <label>Email</label>
+      <input type="email" />
+      <label>Password</label>
+      <input type="password" />
+      <button onClick={loginHandler}>Login</button>
     </>
   );
 };
